@@ -61,6 +61,7 @@ bindingHandlers['className'] = {
   update: function(element, valueAccessor, allBindingsAccessor) {
     var value = valueAccessor();
     var valueUnwrapped = kou.unwrap(value);
+    if (typeof valueUnwrapped == 'function') valueUnwrapped = valueUnwrapped();
     var classes = valueUnwrapped.split(" ");
     for (var i = 0, j = classes.length; i < j; ++i) {
       kou.toggleClass(element, kou.unwrap(classes[i]), true);
