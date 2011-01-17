@@ -8,9 +8,9 @@ Version 0.1 contains the following utilities:
 1. KOD: ko.dependentObservable
 
 * Additional bindings
-1. html. Example: http://jsfiddle.net/greenlaw110/aycSD/
-1. event. Example: http://jsfiddle.net/greenlaw110/FcMBw/2/
-1. attr. Example: http://jsfiddle.net/greenlaw110/FcMBw/2/
-1. clazz. Example: http://jsfiddle.net/greenlaw110/FcMBw/2/
+1. html. Example: see [this](http://jsfiddle.net/greenlaw110/aycSD/) fiddle
+1. event. Example: see [this](http://jsfiddle.net/greenlaw110/FcMBw/2/) fiddle
+1. attr. Example: see [this](http://jsfiddle.net/greenlaw110/FcMBw/2/) fiddle
+1. clazz. Example: see [this](http://jsfiddle.net/greenlaw110/FcMBw/2/) fiddle
 
 To build on Linux, run `build/build-linux`. To build on Windows, run `build\build-windows.bat`.
