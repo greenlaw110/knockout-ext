@@ -1,4 +1,5 @@
 @echo off 
+del /F output\*.*
 set AllFiles=
 for /f "eol=] skip=1 delims=' " %%i in (source-references.js) do set Filename=%%i& call :Concatenate 
 

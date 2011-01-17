@@ -5,6 +5,7 @@ SourceFiles=`grep js < source-references.js | # Find JS references
              sed -e 's/.*/..\/&/' |           # Fix the paths by prefixing with ../
              tr '\n' ' '`                     # Combine into single line
 
+rm output/*
 cat version-header.js $SourceFiles > output/knockout-ext-latest.debug.js # Concatenate all the files
 
 # Now call Google Closure Compiler to produce a minified version
