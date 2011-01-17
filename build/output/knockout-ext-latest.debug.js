@@ -71,7 +71,7 @@ bindingHandlers['attr'] = {
   }
 };
 
-bindingHandlers['clazz'] = {
+bindingHandlers['className'] = {
   update: function(element, valueAccessor, allBindingsAccessor) {
     var value = valueAccessor();
     var valueUnwrapped = kou.unwrap(value);
