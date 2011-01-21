@@ -42,9 +42,9 @@ bindingHandlers['event'] = {
     for (var eventName in value) {
       if (typeof eventName == "string") {
         var eventHandler = kou.unwrap(value[eventName]);
-        kou.regEventHandler(element, eventName, function(event) {
+        kou.regEventHandler(element, eventName, function(event, arg1, arg2, arg3) {
           var retVal;
-          try {retVal = eventHandler.call(viewModel, element);}
+          try {retVal = eventHandler.call(viewModel, element, event, arg1, arg2, arg3);}
           finally {
             if (!retVal) {
               if (event.preventDefault)
